@@ -1,0 +1,57 @@
+#home {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-color: #000;
+  background-image:url('../img/Face_talk.gif');
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+
+}
+
+a.click-div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  position: relative;
+  z-index: 1000;
+}
+
+.logoHome img {
+  width: 65%; 
+  height: auto;
+}
+
+#image {
+  position: absolute;
+  top:30%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+@media (orientation: landscape) {
+#image {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.logoHome img {
+  width: 45%; 
+  height: auto;
+}
+}
+
+@media only screen and (min-width: 900px) {
+.logoHome img {
+  width: 30%; 
+  height: auto;
+}
+}
